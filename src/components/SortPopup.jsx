@@ -9,8 +9,8 @@ function SortPopup() {
     };
 
     React.useEffect(() => {
-        console.log('Rendered');
-    }, [])
+        document.body.addEventListener('click', () => console.log('clicked'));
+    }, [visiblePoup])
 
     return (
         <div className="sort">
